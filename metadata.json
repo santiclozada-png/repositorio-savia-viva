@@ -1,0 +1,7 @@
+{
+  "name": "Savia Viva - Vitalidad pura desde la raíz",
+  "description": "Aplicación de ventas, catálogo de jugos prensados en frío y sistema CRM interactivo para Savia Viva.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

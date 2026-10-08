@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-botanical: #184D3E;
+  --color-citrus: #E85D04;
+  --color-solar: #F4A261;
+  --color-sand: #F8F6F0;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8F6F0;
+    color: #184D3E;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar for boutique feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #184D3E33;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #184D3E66;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+}
